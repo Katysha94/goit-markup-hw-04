@@ -421,6 +421,11 @@ display: flex;
     border-radius: 4px;
  }
 
+ .customers-list-link:hover .customers-list-icon,
+ .customers-list-link:focus .customers-list-icon {
+    fill: #404BBF;
+ }
+
 .customers-list-icon {
     fill: #8E8F99;
 }

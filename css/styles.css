@@ -241,12 +241,11 @@ display: flex;
     width: calc((100% - 72px) / 4);
 }
 
-
-.icon-list-link{
+.feauters-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 264px; 
+    width: 264px;
     height: 112px;
     background-color: #F4F4FD;
     border-radius: 4px;
@@ -337,7 +336,7 @@ display: flex;
 }
  
 .our-team-container {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
  .our-team-title {
@@ -365,7 +364,7 @@ display: flex;
  .social-list {
     display: flex;
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
  }
 
  .social-list-link {
@@ -389,18 +388,18 @@ display: flex;
 
  /* Customers */
 .customers {
-    padding-bottom: 133px;
+    padding: 120px 0;
 }
  .customers-title {
     font-family: var(--main-font-family);
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 59px;
+    margin-bottom: 72px;
  }
 
  .customers-list {
@@ -422,16 +421,20 @@ display: flex;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
- }
-
- .customers-item:hover,
- .customers-item:focus {
-    fill: #404BBF;
+    color: #8E8F99;
  }
 
 .customers-list-icon {
-    fill: #8E8F99;
+    fill: currentColor;
 }
+
+ .customers-list-link:hover,
+ .customers-list-link:focus {
+    color: #404BBF;
+    border-color: #404bbf;
+
+ }
+
 
  /* footer */
  .footer {
@@ -439,6 +442,15 @@ display: flex;
     background-color: var(--primary-text-color);
     padding: 100px 0;
  }
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-container {
+    margin-right: 120px;
+}
 
  .logo-footer {
     color: var(--secondary-accent-color);
@@ -502,6 +514,11 @@ display: flex;
     height: 40px;
 }
 
+.ft-social-list-link:hover,
+.ft-social-list-link:focus {
+    background-color: #31d0aa;
+}
+
 .ft-social-icon {
     fill:#F4F4FD;
 }
@@ -536,6 +553,7 @@ display: flex;
 .navigation-button:hover,
 .navigation-button:focus {
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #FFFFFF;
     border: 1px solid transparent;
 }
@@ -552,8 +570,12 @@ display: flex;
     width: calc((100% - 48px) / 3);
 }
 
-.work-examples-item:hover,
-.work-examples-item:focus {
+.work-examples-link {
+    display: block;
+}
+
+.work-examples-link:hover,
+.work-examples-link:focus {
     border: 1px solid #F4F4FD;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
